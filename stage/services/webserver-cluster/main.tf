@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "webserver_cluster" {
-  source = "github.com/haarabi/terraform-modules//services/webserver-cluster?ref=v0.0.1"
+  source = "git@github.com:haarabi/terraform-modules.git//services/webserver-cluster?ref=v0.0.1"
 
   cluster_name           = var.cluster_name
   db_remote_state_bucket = var.db_remote_state_bucket
